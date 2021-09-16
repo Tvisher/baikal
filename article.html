@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fonts -->
+    <link rel="preload" href="fonts/Raleway-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-ExtraBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <!-- styles -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- jquery-ui -->
+    <link rel="stylesheet" href="https://snipp.ru/cdn/jqueryui/1.12.1/jquery-ui.min.css">
+    <!-- jquery-ui-datapiker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" integrity="sha512-okE4owXD0kfXzgVXBzCDIiSSlpXn3tJbNodngsTnIYPJWjuYhtJ+qMoc0+WUwLHeOwns0wm57Ka903FqQKM1sA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <!-- kill-jump-script -->
+    <script> </script>
+</head>
+
+<body>
+    <div class="mobile_menu">
+        <div class="container">
+            <nav class="mobile__nav">
+                <button class="mobile__search">
+                    <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36.3922 33.4742L29.4055 26.5081C31.6597 23.6363 32.8828 20.09 32.8783 16.4392C32.8783 13.1878 31.9142 10.0095 30.1078 7.30605C28.3014 4.60265 25.734 2.4956 22.7301 1.25136C19.7263 0.00712277 16.4209 -0.318427 13.232 0.315881C10.0432 0.950189 7.11398 2.51587 4.81492 4.81492C2.51587 7.11398 0.950189 10.0432 0.315881 13.232C-0.318427 16.4209 0.00712277 19.7263 1.25136 22.7301C2.4956 25.734 4.60265 28.3014 7.30605 30.1078C10.0095 31.9142 13.1878 32.8783 16.4392 32.8783C20.09 32.8828 23.6363 31.6597 26.5081 29.4055L33.4742 36.3922C33.6652 36.5848 33.8925 36.7376 34.1429 36.842C34.3933 36.9463 34.6619 37 34.9332 37C35.2045 37 35.473 36.9463 35.7235 36.842C35.9739 36.7376 36.2011 36.5848 36.3922 36.3922C36.5848 36.2011 36.7376 35.9739 36.842 35.7235C36.9463 35.473 37 35.2045 37 34.9332C37 34.6619 36.9463 34.3933 36.842 34.1429C36.7376 33.8925 36.5848 33.6652 36.3922 33.4742ZM4.10979 16.4392C4.10979 14.0006 4.8329 11.6169 6.18767 9.58933C7.54243 7.56178 9.46802 5.98149 11.7209 5.04831C13.9738 4.11513 16.4528 3.87097 18.8445 4.3467C21.2362 4.82243 23.433 5.99669 25.1573 7.72098C26.8816 9.44527 28.0559 11.6422 28.5316 14.0338C29.0073 16.4255 28.7632 18.9045 27.83 21.1574C26.8968 23.4103 25.3165 25.3359 23.289 26.6906C21.2614 28.0454 18.8777 28.7685 16.4392 28.7685C13.1692 28.7685 10.0332 27.4695 7.72098 25.1573C5.40878 22.8451 4.10979 19.7091 4.10979 16.4392Z" fill="white" />
+                    </svg>
+
+                </button>
+                <ul class="nav__list">
+                    <li class="list__item">
+                        <a href="#" class="nav__link">Туры</a>
+                    </li>
+                    <li class="list__item active">
+                        <a href="#" class="nav__link">Блог</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="nav__link">О нас</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="nav__link">Партнёрам</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="nav__link">Вакансии</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="row">
+                    <address class="mobile__address">
+                        <a href="tel:+73952612617" class="mobile__phone">+7 (395) 261-26-17</a>
+                        <a href="mailto:ilove@1642.travel" class="mobile__email">ilove@1642.travel</a>
+                    </address>
+                    <div class="mobile__socials">
+                        <a href="#" class="social__item">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.6673 9.54541L7.15692 14.3179L11.6311 17.3006H11.3328L12.8242 22.3714L15.2104 19.3886L19.9829 22.3714L22.6673 9.54541Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9311 16.7038L12.8259 20.2832L13.4225 17.8969L20.5812 10.7383L11.9311 16.7038Z" fill="#133469" />
+                                <path d="M16.107 0C7.15869 0 0 7.15867 0 16.107C0 25.0553 7.15869 32.214 16.107 32.214C25.0553 32.214 32.214 25.0553 32.214 16.107C32.214 7.45694 24.7571 0 16.107 0ZM16.107 30.126C8.3518 30.126 2.08798 23.8622 2.08798 16.107C2.08798 8.35178 8.3518 2.08793 16.107 2.08793C23.8622 2.08793 30.1261 8.35178 30.1261 16.107C29.8278 23.8622 23.564 30.126 16.107 30.126Z" fill="white" />
+                            </svg>
+                            <span>telegram</span>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.6912 17.2998C20.7964 17.2998 20.1998 20.2826 20.1998 20.2826L16.024 17.5981L12.7429 14.0188C12.7429 14.0188 15.4274 13.1239 15.4274 12.2291C15.4274 11.3343 13.3395 8.94805 12.1464 9.24633C10.9532 9.5446 9.46187 11.3343 10.0584 14.0188C10.3567 16.1067 13.0412 19.0895 14.2343 19.9843C14.2343 19.9843 14.2343 19.9843 14.5326 20.2826C14.8309 20.5809 14.8308 20.5809 14.8308 20.5809C16.0239 21.4757 19.305 23.8619 21.3929 23.8619C24.0774 23.8619 25.5688 22.0723 25.5688 20.8792C25.5688 19.686 22.2878 17.2998 21.6912 17.2998Z" fill="white" />
+                                <path d="M16.9181 0C7.9698 0 0.811157 7.15867 0.811157 16.107C0.811157 25.0553 7.9698 32.214 16.9181 32.214C25.8665 32.214 33.0251 25.0553 33.0251 16.107C33.0251 7.45694 25.8665 0 16.9181 0ZM16.9181 30.126C9.16291 30.126 2.89909 23.8622 2.89909 16.107C2.89909 8.35178 9.16291 2.08793 16.9181 2.08793C24.6733 2.08793 30.9372 8.35178 30.9372 16.107C30.9372 23.8622 24.6733 30.126 16.9181 30.126Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.89847 22.968L0.213989 32.2146L8.56577 28.6353L2.89847 22.968Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.47843 21.4766L3.79395 28.0387L10.0578 25.9507L6.47843 21.4766Z" fill="#133469" />
+                            </svg>
+                            <span>whatsapp</span>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg width="31" height="34" viewBox="0 0 31 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.5011 0H8.67518C3.90274 0 0.0251465 3.87759 0.0251465 8.65003V21.476C0.0251465 26.2484 3.90274 30.126 8.67518 30.126H21.5011C26.2736 30.126 30.1512 26.2484 30.1512 21.476V8.65003C30.1512 3.87759 26.2736 0 21.5011 0ZM28.0632 20.5811C28.0632 24.4587 25.677 27.7398 21.5011 27.7398H8.67518C4.79757 27.7398 2.11308 24.4587 2.11308 20.5811V8.35176C2.11308 4.47415 4.49929 1.78966 8.67518 1.78966H21.5011C25.3787 1.78966 28.0632 4.17587 28.0632 8.35176V20.5811Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.09644 28.6349V33.7056L10.7637 30.1263L5.09644 28.6349Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.185 24.1608V30.1263L14.3436 25.0556L7.185 24.1608Z" fill="#133469" />
+                                <path d="M15.8338 9.24775C15.5355 9.24775 15.5356 9.24775 15.5356 9.24775L15.8338 9.84429H16.1321C18.5183 9.84429 20.308 11.634 20.308 14.0202V14.3185L20.9046 14.6167C20.9046 14.3185 20.9046 14.3185 20.9046 14.0202C20.9046 11.634 18.5183 9.24775 15.8338 9.24775ZM15.8338 7.15979C15.5355 7.15979 15.2373 7.15979 14.939 7.15979L15.2373 7.75636C15.5356 7.75636 15.8338 7.75636 16.1321 7.75636C19.7114 7.75636 22.6942 10.7391 22.6942 14.3185C22.6942 14.6167 22.6942 14.915 22.6942 15.2133L23.2908 15.5116C23.2908 15.2133 23.2908 14.6167 23.2908 14.3185C22.9925 10.4408 19.7114 7.15979 15.8338 7.15979ZM16.1321 11.3357L16.4304 12.2305C17.3252 12.5288 17.9218 13.1254 18.2201 14.0202L19.1149 14.3185C18.8166 12.8271 17.6235 11.634 16.1321 11.3357Z" fill="white" />
+                                <path d="M22.3967 20.5814L18.8173 17.0021L17.3259 18.4935C17.3259 18.4935 16.1328 19.3883 15.238 18.4935C14.6414 17.897 13.7466 17.0021 13.4483 16.7038C12.8518 16.1073 12.2552 15.5107 11.957 15.2125C11.0621 14.3176 11.957 13.1245 11.957 13.1245L13.4483 11.6331L9.86897 8.0538C9.86897 8.0538 8.67587 7.45723 7.78104 10.1417C6.88621 12.2297 10.4656 16.4056 11.957 17.897C12.2552 18.1952 12.5535 18.4935 12.5535 18.4935C14.3432 19.9849 18.2207 23.5642 20.3087 22.6694C22.6949 21.7746 22.3967 20.5814 22.3967 20.5814Z" fill="white" />
+                            </svg>
+                            <span>viber</span>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.5768 4.78919C23.588 4.78919 22.7896 5.59077 22.7896 6.58338C22.7896 7.57599 23.588 8.37757 24.5768 8.37757C25.5655 8.37757 26.364 7.57973 26.364 6.58338C26.3643 6.34768 26.3182 6.11424 26.2285 5.89642C26.1388 5.67861 26.0072 5.4807 25.8412 5.31403C25.6751 5.14737 25.478 5.01522 25.261 4.92516C25.0441 4.8351 24.8115 4.78889 24.5768 4.78919Z" fill="white" />
+                                <path d="M9.4917 15.5567C9.4917 12.1321 12.2407 9.37756 15.6405 9.37756C19.0404 9.37756 21.7894 12.1321 21.7894 15.5567C21.7894 18.9812 19.0404 21.7357 15.6405 21.7357C12.2407 21.7357 9.4917 18.9812 9.4917 15.5567Z" stroke="white" stroke-width="2" />
+                                <path d="M30.0284 9.18336L30.0283 9.18336L30.0288 9.19112C30.1325 11.0432 30.1305 12.8834 30.1285 14.7685C30.1282 15.0303 30.1279 15.293 30.1279 15.5566C30.1279 15.8524 30.1284 16.1469 30.1288 16.4402C30.1315 18.2931 30.1341 20.1006 30.0289 21.9204L30.0288 21.9204L30.0284 21.9299C29.9142 24.2964 29.3908 26.2168 27.8193 27.7952C26.2522 29.3691 24.3383 29.8976 21.9851 30.0121L21.9851 30.0121L21.9773 30.0125C20.1337 30.1167 18.3019 30.1147 16.4249 30.1127C16.1643 30.1124 15.9028 30.1121 15.6402 30.1121C15.3782 30.1121 15.1172 30.1124 14.8569 30.1127C12.9825 30.1147 11.1502 30.1167 9.30307 30.0125L9.30307 30.0125L9.29535 30.0121C6.94168 29.8976 5.03192 29.3728 3.46118 27.7952C1.89333 26.2205 1.36621 24.2959 1.2521 21.9299L1.25213 21.9299L1.2517 21.9222C1.14795 20.07 1.14993 18.2267 1.15196 16.3434C1.15224 16.082 1.15252 15.8198 1.15252 15.5566C1.15252 15.2935 1.15224 15.0313 1.15196 14.7699C1.14993 12.8873 1.14795 11.0466 1.25171 9.19101L1.25174 9.19102L1.2521 9.18336C1.36623 6.81693 1.88966 4.89651 3.46118 3.31811C5.02825 1.74418 6.94212 1.21565 9.29535 1.10116L9.29535 1.10119L9.30317 1.10075C11.1468 0.996575 12.9785 0.998559 14.8555 1.00059C15.1161 1.00087 15.3777 1.00116 15.6402 1.00116C15.9023 1.00116 16.1633 1.00087 16.4236 1.00059C18.298 0.998559 20.1303 0.996571 21.9774 1.10076L21.9774 1.10079L21.9851 1.10116C24.3388 1.21567 26.2485 1.7405 27.8193 3.31811C29.3871 4.89283 29.9143 6.81736 30.0284 9.18336Z" stroke="white" stroke-width="2" />
+                            </svg>
+                            <span>instagram</span>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg width="44" height="32" viewBox="0 0 44 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.6911 31.1036L21.691 30.1036H21.6906H21.6889L21.6819 30.1036L21.6535 30.1036L21.5415 30.1034C21.4429 30.1032 21.2975 30.1027 21.1111 30.1018C20.7383 30.0999 20.2013 30.0962 19.5461 30.0887C18.2353 30.0737 16.4532 30.0438 14.5658 29.9841C12.6767 29.9243 10.6906 29.8349 8.96941 29.7016C7.22219 29.5663 5.83359 29.3912 5.08483 29.1816C4.33973 28.967 3.6624 28.5626 3.11802 28.0026C2.58127 27.4505 2.19126 26.7682 1.9856 26.0186C1.39508 22.5662 1.10948 19.0664 1.13061 15.5627H1.13068L1.13061 15.5508C1.11 12.0445 1.39619 8.54426 1.98524 5.09679C2.19624 4.34121 2.58913 3.65324 3.12605 3.09432C3.66794 2.53511 4.31861 2.13009 5.02102 1.90501C10.5516 1.24016 16.1145 0.941121 21.6788 1.00956L21.6788 1.00964H21.6911V0.00963698L21.6912 1.00964H21.6916L21.6933 1.00964L21.7003 1.00964L21.7288 1.00967L21.8415 1.00987C21.9405 1.0101 22.0866 1.01057 22.2738 1.0115C22.6484 1.01337 23.1878 1.01711 23.8458 1.0246C25.1621 1.03958 26.9512 1.06954 28.8441 1.12938C30.7386 1.18928 32.7287 1.27888 34.4498 1.41247C36.2003 1.54836 37.5836 1.72403 38.3181 1.93334L38.3232 1.93475C39.0493 2.13755 39.7242 2.53936 40.2808 3.11114L40.2817 3.11201C40.8058 3.64907 41.1942 4.33529 41.3985 5.10292C42.0256 8.55548 42.3188 12.0696 42.2732 15.5884L42.2731 15.5978L42.2731 15.6073C42.2941 19.1168 41.9998 22.6201 41.3945 26.0676C41.1968 26.8169 40.813 27.5017 40.2798 28.0517C39.7412 28.6047 39.0919 28.9986 38.3926 29.207C32.8515 29.8728 27.2781 30.1723 21.7034 30.1037V30.1036H21.6911V31.1036Z" stroke="white" stroke-width="2" />
+                                <path d="M26.9577 15.5581L18.8314 20.4548V10.6599L26.9577 15.5581Z" stroke="white" stroke-width="2" />
+                            </svg>
+                            <span>youtube</span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="mobile__langs">
+                    <li class="lang__item">
+                        <a href="#" class="lang__link active">RU</a>
+                    </li>
+                    <li class="lang__item">
+                        <a href="#" class="lang__link">EN</a>
+                    </li>
+                    <li class="lang__item">
+                        <a href="#" class="lang__link">DE</a>
+                    </li>
+                    <li class="lang__item">
+                        <a href="#" class="lang__link">FR</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile__close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="search__panel">
+        <form action="#" class="search__inner">
+            <input type="text" name="search" placeholder="Поиск по сайту">
+            <button type="submit"></button>
+        </form>
+        <div class="search__close">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <header id="header" class="header green article">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="index.html" class="header__logo">1642</a>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="list__item">
+                            <a href="#" class="nav__link">Главная</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">Туры</a>
+                        </li>
+                        <li class="list__item active inner">
+                            <a href="#" class="nav__link">Блог</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">О нас</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                        <button class="header__search"></button>
+                    </ul>
+                    <div class="burger_menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+                <address class="header__address">
+                    <a href="tel:+73952612617" class="header__phone">+7 (395) 261-26-17,</a>
+                    <a href="mailto:ilove@1642.travel" class="header__email">ilove@1642.travel</a>
+                </address>
+                <ul class="header__langs">
+                    <li class="lang__item">
+                        <a href="#" class="lang__link active">RU</a>
+                    </li>
+                    <li class="lang__item">
+                        <a href="#" class="lang__link">EN</a>
+                    </li>
+                    <li class="lang__item">
+                        <a href="#" class="lang__link">DE</a>
+                    </li>
+                    <li class="lang__item">
+                        <a href="#" class="lang__link">FR</a>
+                    </li>
+                </ul>
+                <div class="header__socials">
+                    <a href="#" class="social__insta"></a>
+                    <a href="#" class="social__youtube"></a>
+                </div>
+            </div>
+            <div class="header__content">
+                <h1 class="article__title">
+                    Байкальский лёд. Что чаще всего интересует туристов?
+                </h1>
+                <div class="article__date">
+                    Февраль 2020
+                </div>
+            </div>
+        </div>
+        <div class="header__bg">
+            <picture>
+                <source srcset="./img/article-bg.jpg" media="(max-width: 460px)" />
+                <source srcset="./img/article-bg.jpg" media="(max-width: 768px)" />
+                <source srcset="./img/article-bg.jpg" media="(max-width: 1600px)" />
+                <img loading="lazy" src="./img/article-bg.jpg" alt="mainImage">
+            </picture>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <section class="articles" id="articles">
+            <div class="container">
+                <ul class="tour-program__list">
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <div class="galery">
+                                <p class="list__item_desc">
+                                    Лед Байкала&nbsp;&mdash; не&nbsp;единый монолит, ученые выделили 53&nbsp;разных видов льда. Одни образуют причудливые наплески на&nbsp;скалах, другие складываются в&nbsp;огромные горы, третьи формируют гроты и&nbsp;надвиги, четвертые удивляют пузырьками внутри себя.
+                                </p>
+                                <p class="list__item_desc">
+                                    Туристы всегда задают о&nbsp;байкальском льде много вопросов. Самые популярные мы&nbsp;приведем в&nbsp;этой статье. Расскажем об&nbsp;особенностях и&nbsp;формах льда, а&nbsp;также о&nbsp;том, как он&nbsp;возникает и&nbsp;тает.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="additionally-block without-padding">
+                            <span>4°С</span>
+                            <p>температура воды, при которой Байкал покрывается льдом</p>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <h2 class="title">Как замерзает Байкал?</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/article-img-1.webp" type="image/webp"><img loading="lazy" src="./img/article-img-1.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">
+                                    Снимок сделан в&nbsp;конце ноября, Байкал покрыт льдом у&nbsp;городов Нижнеангарск и&nbsp;Северобайкальск, в&nbsp;районе Чивыркуйского залива, Ушканьих островов и&nbsp;поселка Усть-Баргузин
+                                </span>
+                                <p class="list__item_desc">
+                                    Из-за большого объема воды Байкал замерзает медленно и неравномерно. Озеро покрывается льдом примерно с середины января, и сначала замерзает северная его часть — там мельче, а температура ниже.
+                                </p>
+                                <p class="list__item_desc">
+                                    В&nbsp;большинстве других озер температура воды на&nbsp;поверхности снижается уже к&nbsp;ноябрю, нижние слои воды поднимаются наверх, ведь теплая вода легче холодной. Так происходит до&nbsp;тех пор, пока температура всех слоев воды не&nbsp;достигнет 4&deg;С. В&nbsp;этот момент начинается процесс расширения воды&nbsp;&mdash; она превращается в&nbsp;лёд. Верхние слои воды перестают перемешиваться с&nbsp;нижними слоями, и&nbsp;водоём замерзает.
+                                </p>
+                                <p class="list__item_desc">
+                                    На&nbsp;Байкале процесс замерзания происходит по-другому. На&nbsp;озере часто бывают штормы: вода, которая остыла и&nbsp;готова замерзнуть, снова перемешивается с&nbsp;нижними теплыми слоями. Вот и&nbsp;получается, что долгое время на&nbsp;поверхности озера находится теплая вода&nbsp;&mdash; именно поэтому Байкал замерзает долго и&nbsp;покрывается льдом только во&nbsp;второй половине января, когда вода остывает на&nbsp;достаточной глубине.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="additionally-block">
+                            <div class="img_wrapper">
+                                <picture>
+                                    <source srcset="./img/article-thumb-1.webp" type="image/webp"><img loading="lazy" src="./img/article-thumb-1.jpg" alt="">
+                                </picture>
+                            </div>
+                            <a href="#"><u>Топ 10 мест на Байкале для посещения зимой</u></a>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <h2 class="title">Байкал замерзает полностью?</h2>
+                            <div class="galery">
+                                <p class="list__item_desc">
+                                    Нет. На Байкале вообще не замерзает участок около истока Ангары — это около 10—15 км. Тому есть две причины:
+                                </p>
+                                <ul class="list__item_list">
+                                    <li>
+                                        В&nbsp;реке сильное течение&nbsp;&mdash; до&nbsp;1,1&nbsp;км/ч и&nbsp;вода просто не&nbsp;успевает покрываться льдом.
+                                    </li>
+                                    <li>
+                                        Ангара вытекает из&nbsp;Байкала, поэтому в&nbsp;исток реки втягиваются тёплые воды со&nbsp;дна озера&nbsp;&mdash; они прогреваются из-за толстого льда. Они соприкасаются с&nbsp;холодным воздухом, но&nbsp;пока вода остывает, течение успевает отнести ее&nbsp;на&nbsp;10&nbsp;км вперед по&nbsp;течению&nbsp;&mdash; только там Ангара начинает покрываться льдом.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <h2 class="title">Когда лед на Байкале начинает таять?</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/article-img-2.webp" type="image/webp"><img loading="lazy" src="./img/article-img-2.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">
+                                    В&nbsp;начале мая под действием солнца лёд распадается на&nbsp;маленькие кристаллы. Они не&nbsp;связаны между собой, поэтому вода заполняет свободное место, и&nbsp;ледяная корка распадается
+                                </span>
+                                <p class="list__item_desc">
+                                    Тает лёд тоже неравномерно&nbsp;&mdash; с&nbsp;юга на&nbsp;север. В&nbsp;южной части Байкала толщина льда меньше, а&nbsp;температура воздуха выше, там лед начинает таять в&nbsp;середине апреля. Полностью лед сходит только в&nbsp;конце мая&nbsp;&mdash; начале июня.
+                                </p>
+                                <p class="list__item_desc">
+                                    С&nbsp;середины марта лёд становится опасным для передвижения. На&nbsp;нем образуются промоины и&nbsp;пропарины&nbsp;&mdash; это места, где лёд истончается или исчезает под действием течений, газа метана и&nbsp;тепла речных вод в&nbsp;устьях. Их&nbsp;можно заметить издалека: пропарины напоминают лужи на&nbsp;льду. Чаще всего они образуются в&nbsp;притоках рек, или там, где подо льдом видны газовые пузырьки.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <h2 class="title">Почему на льду озера появляются трещины?</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/article-img-3.webp" type="image/webp"><img loading="lazy" src="./img/article-img-3.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">
+                                    Благодаря становым трещинам озеро &laquo;дышит&raquo;: под лёд поступает кислород, и&nbsp;рыба не&nbsp;погибает от&nbsp;его недостатка, а&nbsp;солнечный свет питает планктонные водоросли
+                                </span>
+                                <p class="list__item_desc">
+                                    Зимой, в&nbsp;ясный солнечный день на&nbsp;Байкале можно услышать громкий раскатистый звук, похожий на&nbsp;выстрел. Это сигнал: лёд озера треснул, а&nbsp;вы&nbsp;стали свидетелем уникального природного явления&nbsp;&mdash; образования становой трещины.
+                                </p>
+                                <p class="list__item_desc">
+                                    Одним из&nbsp;свойств воды является её&nbsp;способность к&nbsp;сжатию и&nbsp;расширению в&nbsp;зависимости от&nbsp;температуры. Когда вода остывает, ее&nbsp;объем уменьшается. Так происходит, пока не&nbsp;будет достигнута отметка в&nbsp;4&deg;С, затем вода начинает расширяться. Это свойство является причиной возникновения становых трещин: температура воздуха меняется, лёд сжимается и&nbsp;расширяется, образуются небольшие несквозные щели. Когда температура понижается сильно, становые трещины буквально раскалывают лёд на&nbsp;куски. Длина такой трещины достигает 30&nbsp;километров&nbsp;&mdash; пешком это расстояние преодолевают за&nbsp;5&ndash;6&nbsp;часов. Ширина трещин&nbsp;&mdash; до&nbsp;3&nbsp;метров.
+                                </p>
+                                <p class="list__item_desc">
+                                    Для человека становые трещины опасны: если лёд гладкий, они становятся почти незаметными, поэтому и&nbsp;человек, и&nbsp;машина могут запросто провалиться под лёд.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <h2 class="title">Как на&nbsp;берегах Байкала появляются ледяные горы?</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/article-img-4.webp" type="image/webp"><img loading="lazy" src="./img/article-img-4.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">
+                                    На&nbsp;Южном Байкале был зафиксирован надвиг высотой 30&nbsp;метров. На&nbsp;фото надвиги в&nbsp;районе мыса Соболев, апрель 2019 года
+                                </span>
+                                <p class="list__item_desc">
+                                    С&nbsp;февраля ветры на&nbsp;Байкале усиливаются и&nbsp;двигают ледяные поля&nbsp;&mdash; льдины, ширина которых больше 20&nbsp;метров. Там, где лед встречает сопротивление&nbsp;&mdash; берег, скалу или сооружение&nbsp;&mdash; появляются надвиги, то&nbsp;есть нагромождения льдин. Они выходят на&nbsp;берег на&nbsp;расстояние в&nbsp;20&ndash;30&nbsp;метров, а&nbsp;в&nbsp;высоту достигают 16&ndash;18 метров&nbsp;&mdash; это примерно как пятиэтажный дом.
+                                </p>
+                                <p class="list__item_desc">
+                                    Зимой надвиги встречаются редко: сам лёд крепкий, а&nbsp;температура воздуха устойчивая. К&nbsp;тому&nbsp;же процесс расширения и&nbsp;сжатия льда в&nbsp;озере регулируют становые трещины. Их&nbsp;чаще встретишь весной, когда верхние слои льда начинают таять, вода заполняет трещины льда и&nbsp;снова замерзает. Корка льда становится монолитной и&nbsp;шероховатой&nbsp;&mdash; лед тает и&nbsp;теряет гладкость. Становые трещины больше не&nbsp;выполняют роль температурных компенсаторов.
+                                </p>
+                                <p class="list__item_desc">
+                                    Надвиги пугают гулом, с&nbsp;которым движутся льдины, и&nbsp;скоростью движения льда&nbsp;&mdash; до&nbsp;10&nbsp;см/сек. Они опасны тем, что ломают причальные сооружения и&nbsp;сдвигают на&nbsp;берег суда, которые находятся на&nbsp;зимней стоянке. Например, в&nbsp;1933 году у&nbsp;станции Танхой надвиги столкнули с&nbsp;рельсов товарный поезд.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <h2 class="title">Почему на&nbsp;поверхности озера встречаются скопления колотых льдин?</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/article-img-5.webp" type="image/webp"><img loading="lazy" src="./img/article-img-5.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">
+                                    По&nbsp;толщине торосов определяют время, когда они образовались: чем они тоньше, тем раньше появились&nbsp;&mdash; лед еще не&nbsp;успел промерзнуть и&nbsp;был тонким
+                                </span>
+                                <p class="list__item_desc">
+                                    Во&nbsp;время ледостава штормы на&nbsp;Байкале не&nbsp;прекращаются. Волны часто выламывают верхний слой свежего льда: льдины сбиваются в&nbsp;кучу и&nbsp;остаются на&nbsp;поверхности озера. Так появляются торосы&nbsp;&mdash; нагромождения льда, которые выломал ветер.
+                                </p>
+                                <p class="list__item_desc">
+                                    Особенно часто они встречаются вблизи становых трещин&nbsp;&mdash; когда температура повышается, щели сужаются, лед из&nbsp;них выходит на&nbsp;поверхность.
+                                </p>
+                                <p class="list__item_desc">
+                                    Также торосы часто появляются около берегов озера и&nbsp;вблизи мысов. Для автомобилей, саней и&nbsp;хивусов такие поля из&nbsp;острых льдин становятся ощутимым препятствием&nbsp;&mdash; острые края повреждают шины и&nbsp;прокалывают воздушную подушку. А&nbsp;некоторые торосы не&nbsp;получается преодолеть даже пешком: высота торосов достигает 10&ndash;20&nbsp;метров, пройти десятки метров по&nbsp;скользким и&nbsp;острым горам из&nbsp;колотых льдин невозможно.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="additionally-block">
+                            <div class="img_wrapper">
+                                <picture>
+                                    <source srcset="./img/article-thumb-2.webp" type="image/webp"><img loading="lazy" src="./img/article-thumb-2.jpg" alt="">
+                                </picture>
+                            </div>
+                            <a href="#"><u>Байкал: великий и&nbsp;прозрачный. Почему вода озера такая чистая?</u></a>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <h2 class="title">Почему байкальские скалы покрыты льдом?</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/article-img-6.webp" type="image/webp"><img loading="lazy" src="./img/article-img-6.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">
+                                    Самые красивые наплески у&nbsp;острова Огой&nbsp;&mdash; здесь сделано это фото, у&nbsp;мыса Хобой и&nbsp;у&nbsp;подножия скалы Три Брата
+                                </span>
+                                <p class="list__item_desc">
+                                    Крутые отвесные скалы зимой покрываются причудливым бело-голубым слоем льда&nbsp;&mdash; наплесками. Когда температура воздуха ниже нуля, а&nbsp;Байкал еще не&nbsp;покрылся льдом, капли воды от&nbsp;сильных волн и&nbsp;ветров попадают на&nbsp;скалы и&nbsp;моментально замерзают. Постепенно они намерзают друг на&nbsp;друге и&nbsp;образуются ледяные &laquo;холмики&raquo;&nbsp;&mdash; сокуи. Из-за сильных ветров они достигают высоты до&nbsp;30&nbsp;метров.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <h2 class="title">Почему байкальский лёд такой крепкий?</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/article-img-7.webp" type="image/webp"><img loading="lazy" src="./img/article-img-7.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">
+                                    С&nbsp;января по&nbsp;апрель 1901 года на&nbsp;лошадях перевезли почти 8&nbsp;тысяч человек
+                                    Фото: Иркипедия
+                                </span>
+                                <p class="list__item_desc">
+                                    Озеро выдерживает десятки машин и&nbsp;хивусов, которые движутся по&nbsp;льду Байкала. Зимой толщина льда достигает 1&nbsp;метра&nbsp;&mdash; для рек и&nbsp;озер Сибири это среднее значение. Лед такой толщины способен выдержать вертолет.
+                                </p>
+                                <p class="list__item_desc">
+                                    По&nbsp;льду озера ежегодно прокладывают дорогу до&nbsp;острова Ольхон&nbsp;&mdash; она выдерживает автомобили весом до&nbsp;10&nbsp;тонн. В&nbsp;1901 году с&nbsp;января по&nbsp;апрель на&nbsp;льду озера работала железная дорога, которая соединяла западное и&nbsp;восточное побережья озера. Вагоны двигали с&nbsp;помощью лошадей, а&nbsp;длина путей составляла 40&nbsp;км.
+                                </p>
+                                <div class="list__item_desc">
+                                    Вот почему лед такой прочный:
+                                    <ul class="list__item_list">
+                                        <li>
+                                            чистая вода: байкальский лёд состоит только из&nbsp;воды и&nbsp;кислорода. Вы&nbsp;никогда не&nbsp;увидите в&nbsp;нём песок, грязь и&nbsp;глину, которые снижают прочность льда в&nbsp;других водоемах;
+                                        </li>
+                                        <li>
+                                            вода Байкала по&nbsp;составу близка к&nbsp;дистиллированной&nbsp;&mdash; в&nbsp;ней почти нет солей и&nbsp;прочих химических примесей. Под воздействием соли лёд тает быстрее.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="additionally-block">
+                            <div class="img_wrapper">
+                                <picture>
+                                    <source srcset="./img/article-thumb-3.webp" type="image/webp"><img loading="lazy" src="./img/article-thumb-3.jpg" alt="">
+                                </picture>
+                            </div>
+                            <a href="#"><u>Кругобайкальская железная дорога.Часть 1: история строительства</u></a>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <h2 class="title">В&nbsp;какой части озера лед крепче? </h2>
+                            <div class="galery">
+                                <p class="list__item_desc">
+                                    Самый крепкий лёд находится у&nbsp;деревни Сарма, села Байкальское и&nbsp;вблизи поселков Хужир и&nbsp;Узуры&nbsp;&mdash; его средняя толщина 101&ndash;117&nbsp;см.
+                                </p>
+                                <p class="list__item_desc">
+                                    В&nbsp;некоторых местах на&nbsp;озере образуются подсовы&nbsp;&mdash; смерзания отдельных обломков льда&nbsp;&mdash; в&nbsp;таких случаях толщины достигает 150&ndash;250&nbsp;см. Вот только заранее сказать, где они будут, нельзя&nbsp;&mdash; каждый год Байкал замерзает по-разному, поэтому подсовы редко появляются в&nbsp;одном и&nbsp;том&nbsp;же месте.
+                                </p>
+                                <p class="list__item_desc">
+                                    В&nbsp;Чивыркуйском заливе, у&nbsp;мысов Лиственничный и&nbsp;Большой Кадильный, в&nbsp;устьях Селенги и&nbsp;Баргузина, вблизи Ушканьих островов лёд опаснее из-за пропарин. В&nbsp;этих участках слой льда тонкий, поэтому их&nbsp;нужно проходить осторожно.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <h2 class="title">Почему лед такой прозрачный?</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/day7-large-img.webp" type="image/webp"><img loading="lazy" src="./img/day7-large-img.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">
+                                    Туристы всех возрастов с&nbsp;одинаковым интересом разглядывают глубины Байкала через лед и&nbsp;делают фотографии со&nbsp;льдинами
+                                </span>
+                                <p class="list__item_desc">
+                                    Чистая вода озера&nbsp;&mdash; причина, по&nbsp;которой байкальский лед прозрачный: в&nbsp;воде Байкала почти нет примесей и&nbsp;он&nbsp;постоянно самоочищается&nbsp;&mdash; зоопланктон чистит озеро.
+                                </p>
+                                <p class="list__item_desc">
+                                    Ветер постоянно метёт снег по&nbsp;озеру и&nbsp;тем самым полирует поверхность льда&nbsp;&mdash; она становится гладкой и&nbsp;прозрачной как стекло. На&nbsp;мелководье через лёд толщиной 1&nbsp;метр можно отчетливо увидеть дно озера.
+                                </p>
+                                <p class="list__item_desc">
+                                    В&nbsp;зависимости от&nbsp;того, как падает свет, вода озера сквозь толщу льда приобретает голубой, бирюзовый или насыщенно-синий цвет и&nbsp;завораживает настолько, что от&nbsp;неё становится сложно оторвать взгляд.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <h2 class="title">Как и&nbsp;когда можно передвигаться по&nbsp;льду Байкала?</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/day5-large-image.webp" type="image/webp"><img loading="lazy" src="./img/day5-large-image.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">
+                                    Будьте бдительны на&nbsp;дорогах с&nbsp;вешками&nbsp;&mdash; ограждениями, которые указывают путь&nbsp;&mdash; неизвестно, где образуется новая трещина
+                                </span>
+                                <ul class="list__item_list">
+                                    <li>
+                                        Февраль и&nbsp;первая половина марта&nbsp;&mdash; удачное время для езды по&nbsp;льду озера. В&nbsp;этот период лёд достигает наибольшей толщины.
+                                    </li>
+                                    <li>
+                                        Для движения по&nbsp;Байкалу советуем воспользоваться услугой специальных гидов&nbsp;&mdash; ледовых капитанов. Эти люди хорошо знают озеро и&nbsp;следят за&nbsp;тем, как проходит ледостав на&nbsp;Байкале. Они покажут вам самые красивые места, расскажут интересные легенды и&nbsp;факты, сделают поездку по&nbsp;льду безопаснее: маршрут проходит только по&nbsp;проверенным и&nbsp;крепким участкам.
+                                    </li>
+                                    <li>
+                                        Можете выехать на&nbsp;лед самостоятельно только в&nbsp;том случае, когда собираетесь двигаться по&nbsp;официальной ледовой переправе &laquo;Малое море&nbsp;&mdash; Ольхон&raquo;. За&nbsp;этой дорогой наблюдает МЧС. Следы от&nbsp;шин, которые встречаются почти везде&nbsp;&mdash; не&nbsp;гарант безопасности, такие дороги прокладывают рыбаки без учета особенностей озера.
+                                    </li>
+                                    <li>
+                                        Не&nbsp;выезжайте на&nbsp;лёд в&nbsp;темное время суток: увидеть опасность и&nbsp;среагировать в&nbsp;темноте сложнее.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="blog inner small" id="blog">
+            <div class="container">
+                <h2 class="blog__title">
+                    <a href="#">Дальше</a>
+                </h2>
+                <div class="row">
+                    <div class="col">
+                        <article class="blog__item">
+                            <div class="blog__image">
+                                <picture>
+                                    <source srcset="./img/blogImage1-700.jpg" media="(max-width: 700px)" />
+                                    <img loading="lazy" src="./img/blogImage1-700.jpg" alt="">
+                                </picture>
+                            </div>
+                            <h5><a href="#" class="blog-item__title"><u>Байкальский лед. Что чаще всего интересует туристов?</u></a></h5>
+                            <span class="blog__date">Февраль 2020</span>
+                        </article>
+                    </div>
+                    <div class="col ">
+                        <article class="blog__item ">
+                            <div class="blog__image">
+                                <picture>
+                                    <source srcset="./img/blogImage2-700.jpg" media="(max-width: 700px)" />
+                                    <img loading="lazy" src="./img/blogImage2.jpg" alt="">
+                                </picture>
+                            </div>
+                            <h5><a href="#" class="blog-item__title"><u>Чем заняться на&nbsp;Байкале зимой? Когда лучше всего его посетить?</u></a></h5>
+                            <span class="blog__date"> Февраль 2020</span>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="blog__item">
+                            <h5><a href="#" class="blog-item__title"><u>Байкал: великий и&nbsp;прозрачный. Почему вода озера такая чистая?</u></a></h5>
+                            <span class="blog__date"> Январь 2020</span>
+                        </article>
+                        <article class="blog__item">
+                            <h5> <a href="#" class="blog-item__title"><u>Эндемики Байкала. Какие они и&nbsp;почему их&nbsp;так много</u></a></h5>
+                            <span class="blog__date">Декабрь 2019</span>
+                        </article>
+                        <article class="blog__item">
+                            <h5>
+                                <a href="#" class="blog-item__title"><u>Кругобайкальская железная дорога.Часть 1: история строительства</u></a>
+                            </h5>
+                            <span class="blog__date">Октябрь 2019</span>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="blog__item">
+                            <h5><a href="#" class="blog-item__title"><u>Топ 10&nbsp;мест на&nbsp;Байкале для посещения зимой</u></a></h5>
+                            <span class="blog__date">Январь 2020</span>
+                        </article>
+                        <article class="blog__item">
+                            <h5><a href="#" class="blog-item__title"><u>Астрофизика на&nbsp;Байкале. Как работает и&nbsp;что ищет крупнейший в&nbsp;Северном полушарии нейтринный телескоп </u></a></h5>
+                            <span class="blog__date">Ноябрь 2020</span>
+                        </article>
+                        <article class="blog__item">
+                            <h5>
+                                <a href="#" class="blog-item__title"><u>Кругобайкальская железная дорога.Вступление</u></a>
+                            </h5>
+                            <span class="blog__date">Октябрь 2019</span>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular-tours similar-tours grey" id="popular-tours">
+            <div class="popular-tours__wrapper">
+                <div class="container">
+                    <h2 class="popular-tours__title">
+                        <span>Туры с&nbsp;маршрутами по&nbsp;льду</span>
+                        <a href="" class="popular-tours__link">Все туры</a>
+                    </h2>
+                    <ul class="popular-tours__list">
+                        <li class="list__item _big">
+                            <div class="image__wrapper">
+                                <picture>
+                                    <source srcset="./img/transparent-ice-blog-400.jpg" media="(max-width: 400px)" />
+                                    <source srcset="./img/transparent-ice-700.jpg" media="(max-width: 768px)" />
+                                    <img loading="lazy" src="./img/transparent-ice.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="list__item_content">
+                                <div class="flex__wrapper">
+                                    <a href="" class="list__item_title"><u>Большая хрустальная сказка</u></a>
+                                    <div class="list__item_price">
+                                        <div class="price">42&nbsp;500&nbsp;₽ </div>
+                                        <span class="days"> 7&nbsp;дней</span>
+                                    </div>
+                                </div>
+                                <div class="flex__wrapper">
+                                    <p class="list__item_text">Комбинированный тур, половина которого состоит из&nbsp;трекинговых переходов по&nbsp;горам и&nbsp;льду Байкала, а&nbsp;вторая половина&nbsp;&mdash; из&nbsp;экскурсионных прогулок на&nbsp;автомобилях.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item _medium">
+                            <div class="list__item_content">
+                                <div class="flex__wrapper">
+                                    <a href="" class="list__item_title"><u>Вокруг Ольхона</u></a>
+                                    <div class="list__item_price">
+                                        <div class="price">30&nbsp;000&nbsp;₽ </div>
+                                        <span class="days"> 5&nbsp;дней</span>
+                                    </div>
+                                </div>
+                                <p class="list__item_text">Активный трекинговый тур с&nbsp;большим количеством переходов по&nbsp;льду Байкала и&nbsp;ночевками в&nbsp;зимних палатках. Для тура вам понадобится определенная физическая и&nbsp;моральная выдержка, оптимизм и&nbsp;тяга к&nbsp;приключениям.
+                                </p>
+                            </div>
+                            <div class="image__wrapper">
+                                <picture>
+                                    <source srcset="./img/tents-400.jpg" media="(max-width: 400px)" />
+                                    <source srcset="./img/tents-1000.jpg" media="(max-width: 1000px)" />
+                                    <img loading="lazy" src="./img/tents.jpg" alt="">
+                                </picture>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="popular-tours__btn btn-green">Все туры</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container relative">
+            <div class="to_top_btn">
+                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.70711 0.292893C8.31658 -0.097631 7.68342 -0.097631 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 2L9 1L7 1L7 2L9 2Z" fill="white" />
+                </svg>
+            </div>
+            <div class="footer__wrap">
+                <nav class="footer__nav">
+                    <ul class="nav__list">
+                        <li class="list__item">
+                            <a href="#" class="nav__link">Туры</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">Блог</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">О нас</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">партнёры</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">Вакансии</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="footer__address">
+                    <a href="tel:+73952612617" class="footer__phone">+7 (395) 261-26-17,</a>
+                    <a href="mailto:ilove@1642.travel" class="footer__email">ilove@1642.travel</a>
+                </address>
+                <div class="footer__socials">
+                    <a href="#" class="social__insta"></a>
+                    <a href="#" class="social__youtube"></a>
+                </div>
+            </div>
+            <div class="footer__info">
+                <span>© 2006—2021 Туры на Байкал 1642</span>
+                <a href="#">Дизайн сайта — Екатерина Морозова</a>
+            </div>
+        </div>
+    </footer>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <!-- jquery-ui -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

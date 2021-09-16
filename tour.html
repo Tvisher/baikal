@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fonts -->
+    <link rel="preload" href="fonts/Raleway-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-ExtraBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-Medium.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Raleway-SemiBold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <!-- styles -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- jquery-ui -->
+    <link rel="stylesheet" href="https://snipp.ru/cdn/jqueryui/1.12.1/jquery-ui.min.css">
+    <!-- jquery-ui-datapiker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" integrity="sha512-okE4owXD0kfXzgVXBzCDIiSSlpXn3tJbNodngsTnIYPJWjuYhtJ+qMoc0+WUwLHeOwns0wm57Ka903FqQKM1sA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preload" href="./css/style.min.css" as="style">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <!-- kill-jump-script -->
+    <script> </script>
+</head>
+
+<body>
+    <div class="mobile_menu">
+        <div class="container">
+            <nav class="mobile__nav">
+                <button class="mobile__search">
+                    <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M36.3922 33.4742L29.4055 26.5081C31.6597 23.6363 32.8828 20.09 32.8783 16.4392C32.8783 13.1878 31.9142 10.0095 30.1078 7.30605C28.3014 4.60265 25.734 2.4956 22.7301 1.25136C19.7263 0.00712277 16.4209 -0.318427 13.232 0.315881C10.0432 0.950189 7.11398 2.51587 4.81492 4.81492C2.51587 7.11398 0.950189 10.0432 0.315881 13.232C-0.318427 16.4209 0.00712277 19.7263 1.25136 22.7301C2.4956 25.734 4.60265 28.3014 7.30605 30.1078C10.0095 31.9142 13.1878 32.8783 16.4392 32.8783C20.09 32.8828 23.6363 31.6597 26.5081 29.4055L33.4742 36.3922C33.6652 36.5848 33.8925 36.7376 34.1429 36.842C34.3933 36.9463 34.6619 37 34.9332 37C35.2045 37 35.473 36.9463 35.7235 36.842C35.9739 36.7376 36.2011 36.5848 36.3922 36.3922C36.5848 36.2011 36.7376 35.9739 36.842 35.7235C36.9463 35.473 37 35.2045 37 34.9332C37 34.6619 36.9463 34.3933 36.842 34.1429C36.7376 33.8925 36.5848 33.6652 36.3922 33.4742ZM4.10979 16.4392C4.10979 14.0006 4.8329 11.6169 6.18767 9.58933C7.54243 7.56178 9.46802 5.98149 11.7209 5.04831C13.9738 4.11513 16.4528 3.87097 18.8445 4.3467C21.2362 4.82243 23.433 5.99669 25.1573 7.72098C26.8816 9.44527 28.0559 11.6422 28.5316 14.0338C29.0073 16.4255 28.7632 18.9045 27.83 21.1574C26.8968 23.4103 25.3165 25.3359 23.289 26.6906C21.2614 28.0454 18.8777 28.7685 16.4392 28.7685C13.1692 28.7685 10.0332 27.4695 7.72098 25.1573C5.40878 22.8451 4.10979 19.7091 4.10979 16.4392Z" fill="white" />
+                    </svg>
+
+                </button>
+                <ul class="nav__list">
+                    <li class="list__item active">
+                        <a href="#" class="nav__link">Туры</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="nav__link">Блог</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="nav__link">О нас</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="nav__link">Партнёрам</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="nav__link">Вакансии</a>
+                    </li>
+                    <li class="list__item">
+                        <a href="#" class="nav__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="row">
+                    <address class="mobile__address">
+                        <a href="tel:+73952612617" class="mobile__phone">+7 (395) 261-26-17</a>
+                        <a href="mailto:ilove@1642.travel" class="mobile__email">ilove@1642.travel</a>
+                    </address>
+                    <div class="mobile__socials">
+                        <a href="#" class="social__item">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.6673 9.54541L7.15692 14.3179L11.6311 17.3006H11.3328L12.8242 22.3714L15.2104 19.3886L19.9829 22.3714L22.6673 9.54541Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9311 16.7038L12.8259 20.2832L13.4225 17.8969L20.5812 10.7383L11.9311 16.7038Z" fill="#133469" />
+                                <path d="M16.107 0C7.15869 0 0 7.15867 0 16.107C0 25.0553 7.15869 32.214 16.107 32.214C25.0553 32.214 32.214 25.0553 32.214 16.107C32.214 7.45694 24.7571 0 16.107 0ZM16.107 30.126C8.3518 30.126 2.08798 23.8622 2.08798 16.107C2.08798 8.35178 8.3518 2.08793 16.107 2.08793C23.8622 2.08793 30.1261 8.35178 30.1261 16.107C29.8278 23.8622 23.564 30.126 16.107 30.126Z" fill="white" />
+                            </svg>
+                            <span>telegram</span>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.6912 17.2998C20.7964 17.2998 20.1998 20.2826 20.1998 20.2826L16.024 17.5981L12.7429 14.0188C12.7429 14.0188 15.4274 13.1239 15.4274 12.2291C15.4274 11.3343 13.3395 8.94805 12.1464 9.24633C10.9532 9.5446 9.46187 11.3343 10.0584 14.0188C10.3567 16.1067 13.0412 19.0895 14.2343 19.9843C14.2343 19.9843 14.2343 19.9843 14.5326 20.2826C14.8309 20.5809 14.8308 20.5809 14.8308 20.5809C16.0239 21.4757 19.305 23.8619 21.3929 23.8619C24.0774 23.8619 25.5688 22.0723 25.5688 20.8792C25.5688 19.686 22.2878 17.2998 21.6912 17.2998Z" fill="white" />
+                                <path d="M16.9181 0C7.9698 0 0.811157 7.15867 0.811157 16.107C0.811157 25.0553 7.9698 32.214 16.9181 32.214C25.8665 32.214 33.0251 25.0553 33.0251 16.107C33.0251 7.45694 25.8665 0 16.9181 0ZM16.9181 30.126C9.16291 30.126 2.89909 23.8622 2.89909 16.107C2.89909 8.35178 9.16291 2.08793 16.9181 2.08793C24.6733 2.08793 30.9372 8.35178 30.9372 16.107C30.9372 23.8622 24.6733 30.126 16.9181 30.126Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.89847 22.968L0.213989 32.2146L8.56577 28.6353L2.89847 22.968Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.47843 21.4766L3.79395 28.0387L10.0578 25.9507L6.47843 21.4766Z" fill="#133469" />
+                            </svg>
+                            <span>whatsapp</span>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg width="31" height="34" viewBox="0 0 31 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.5011 0H8.67518C3.90274 0 0.0251465 3.87759 0.0251465 8.65003V21.476C0.0251465 26.2484 3.90274 30.126 8.67518 30.126H21.5011C26.2736 30.126 30.1512 26.2484 30.1512 21.476V8.65003C30.1512 3.87759 26.2736 0 21.5011 0ZM28.0632 20.5811C28.0632 24.4587 25.677 27.7398 21.5011 27.7398H8.67518C4.79757 27.7398 2.11308 24.4587 2.11308 20.5811V8.35176C2.11308 4.47415 4.49929 1.78966 8.67518 1.78966H21.5011C25.3787 1.78966 28.0632 4.17587 28.0632 8.35176V20.5811Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.09644 28.6349V33.7056L10.7637 30.1263L5.09644 28.6349Z" fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.185 24.1608V30.1263L14.3436 25.0556L7.185 24.1608Z" fill="#133469" />
+                                <path d="M15.8338 9.24775C15.5355 9.24775 15.5356 9.24775 15.5356 9.24775L15.8338 9.84429H16.1321C18.5183 9.84429 20.308 11.634 20.308 14.0202V14.3185L20.9046 14.6167C20.9046 14.3185 20.9046 14.3185 20.9046 14.0202C20.9046 11.634 18.5183 9.24775 15.8338 9.24775ZM15.8338 7.15979C15.5355 7.15979 15.2373 7.15979 14.939 7.15979L15.2373 7.75636C15.5356 7.75636 15.8338 7.75636 16.1321 7.75636C19.7114 7.75636 22.6942 10.7391 22.6942 14.3185C22.6942 14.6167 22.6942 14.915 22.6942 15.2133L23.2908 15.5116C23.2908 15.2133 23.2908 14.6167 23.2908 14.3185C22.9925 10.4408 19.7114 7.15979 15.8338 7.15979ZM16.1321 11.3357L16.4304 12.2305C17.3252 12.5288 17.9218 13.1254 18.2201 14.0202L19.1149 14.3185C18.8166 12.8271 17.6235 11.634 16.1321 11.3357Z" fill="white" />
+                                <path d="M22.3967 20.5814L18.8173 17.0021L17.3259 18.4935C17.3259 18.4935 16.1328 19.3883 15.238 18.4935C14.6414 17.897 13.7466 17.0021 13.4483 16.7038C12.8518 16.1073 12.2552 15.5107 11.957 15.2125C11.0621 14.3176 11.957 13.1245 11.957 13.1245L13.4483 11.6331L9.86897 8.0538C9.86897 8.0538 8.67587 7.45723 7.78104 10.1417C6.88621 12.2297 10.4656 16.4056 11.957 17.897C12.2552 18.1952 12.5535 18.4935 12.5535 18.4935C14.3432 19.9849 18.2207 23.5642 20.3087 22.6694C22.6949 21.7746 22.3967 20.5814 22.3967 20.5814Z" fill="white" />
+                            </svg>
+                            <span>viber</span>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.5768 4.78919C23.588 4.78919 22.7896 5.59077 22.7896 6.58338C22.7896 7.57599 23.588 8.37757 24.5768 8.37757C25.5655 8.37757 26.364 7.57973 26.364 6.58338C26.3643 6.34768 26.3182 6.11424 26.2285 5.89642C26.1388 5.67861 26.0072 5.4807 25.8412 5.31403C25.6751 5.14737 25.478 5.01522 25.261 4.92516C25.0441 4.8351 24.8115 4.78889 24.5768 4.78919Z" fill="white" />
+                                <path d="M9.4917 15.5567C9.4917 12.1321 12.2407 9.37756 15.6405 9.37756C19.0404 9.37756 21.7894 12.1321 21.7894 15.5567C21.7894 18.9812 19.0404 21.7357 15.6405 21.7357C12.2407 21.7357 9.4917 18.9812 9.4917 15.5567Z" stroke="white" stroke-width="2" />
+                                <path d="M30.0284 9.18336L30.0283 9.18336L30.0288 9.19112C30.1325 11.0432 30.1305 12.8834 30.1285 14.7685C30.1282 15.0303 30.1279 15.293 30.1279 15.5566C30.1279 15.8524 30.1284 16.1469 30.1288 16.4402C30.1315 18.2931 30.1341 20.1006 30.0289 21.9204L30.0288 21.9204L30.0284 21.9299C29.9142 24.2964 29.3908 26.2168 27.8193 27.7952C26.2522 29.3691 24.3383 29.8976 21.9851 30.0121L21.9851 30.0121L21.9773 30.0125C20.1337 30.1167 18.3019 30.1147 16.4249 30.1127C16.1643 30.1124 15.9028 30.1121 15.6402 30.1121C15.3782 30.1121 15.1172 30.1124 14.8569 30.1127C12.9825 30.1147 11.1502 30.1167 9.30307 30.0125L9.30307 30.0125L9.29535 30.0121C6.94168 29.8976 5.03192 29.3728 3.46118 27.7952C1.89333 26.2205 1.36621 24.2959 1.2521 21.9299L1.25213 21.9299L1.2517 21.9222C1.14795 20.07 1.14993 18.2267 1.15196 16.3434C1.15224 16.082 1.15252 15.8198 1.15252 15.5566C1.15252 15.2935 1.15224 15.0313 1.15196 14.7699C1.14993 12.8873 1.14795 11.0466 1.25171 9.19101L1.25174 9.19102L1.2521 9.18336C1.36623 6.81693 1.88966 4.89651 3.46118 3.31811C5.02825 1.74418 6.94212 1.21565 9.29535 1.10116L9.29535 1.10119L9.30317 1.10075C11.1468 0.996575 12.9785 0.998559 14.8555 1.00059C15.1161 1.00087 15.3777 1.00116 15.6402 1.00116C15.9023 1.00116 16.1633 1.00087 16.4236 1.00059C18.298 0.998559 20.1303 0.996571 21.9774 1.10076L21.9774 1.10079L21.9851 1.10116C24.3388 1.21567 26.2485 1.7405 27.8193 3.31811C29.3871 4.89283 29.9143 6.81736 30.0284 9.18336Z" stroke="white" stroke-width="2" />
+                            </svg>
+                            <span>instagram</span>
+                        </a>
+                        <a href="#" class="social__item">
+                            <svg width="44" height="32" viewBox="0 0 44 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.6911 31.1036L21.691 30.1036H21.6906H21.6889L21.6819 30.1036L21.6535 30.1036L21.5415 30.1034C21.4429 30.1032 21.2975 30.1027 21.1111 30.1018C20.7383 30.0999 20.2013 30.0962 19.5461 30.0887C18.2353 30.0737 16.4532 30.0438 14.5658 29.9841C12.6767 29.9243 10.6906 29.8349 8.96941 29.7016C7.22219 29.5663 5.83359 29.3912 5.08483 29.1816C4.33973 28.967 3.6624 28.5626 3.11802 28.0026C2.58127 27.4505 2.19126 26.7682 1.9856 26.0186C1.39508 22.5662 1.10948 19.0664 1.13061 15.5627H1.13068L1.13061 15.5508C1.11 12.0445 1.39619 8.54426 1.98524 5.09679C2.19624 4.34121 2.58913 3.65324 3.12605 3.09432C3.66794 2.53511 4.31861 2.13009 5.02102 1.90501C10.5516 1.24016 16.1145 0.941121 21.6788 1.00956L21.6788 1.00964H21.6911V0.00963698L21.6912 1.00964H21.6916L21.6933 1.00964L21.7003 1.00964L21.7288 1.00967L21.8415 1.00987C21.9405 1.0101 22.0866 1.01057 22.2738 1.0115C22.6484 1.01337 23.1878 1.01711 23.8458 1.0246C25.1621 1.03958 26.9512 1.06954 28.8441 1.12938C30.7386 1.18928 32.7287 1.27888 34.4498 1.41247C36.2003 1.54836 37.5836 1.72403 38.3181 1.93334L38.3232 1.93475C39.0493 2.13755 39.7242 2.53936 40.2808 3.11114L40.2817 3.11201C40.8058 3.64907 41.1942 4.33529 41.3985 5.10292C42.0256 8.55548 42.3188 12.0696 42.2732 15.5884L42.2731 15.5978L42.2731 15.6073C42.2941 19.1168 41.9998 22.6201 41.3945 26.0676C41.1968 26.8169 40.813 27.5017 40.2798 28.0517C39.7412 28.6047 39.0919 28.9986 38.3926 29.207C32.8515 29.8728 27.2781 30.1723 21.7034 30.1037V30.1036H21.6911V31.1036Z" stroke="white" stroke-width="2" />
+                                <path d="M26.9577 15.5581L18.8314 20.4548V10.6599L26.9577 15.5581Z" stroke="white" stroke-width="2" />
+                            </svg>
+                            <span>youtube</span>
+                        </a>
+                    </div>
+                </div>
+                <ul class="mobile__langs">
+                    <li class="lang__item">
+                        <a href="#" class="lang__link active">RU</a>
+                    </li>
+                    <li class="lang__item">
+                        <a href="#" class="lang__link">EN</a>
+                    </li>
+                    <li class="lang__item">
+                        <a href="#" class="lang__link">DE</a>
+                    </li>
+                    <li class="lang__item">
+                        <a href="#" class="lang__link">FR</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile__close">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <div class="search__panel">
+        <form action="#" class="search__inner">
+            <input type="text" name="search" placeholder="Поиск по сайту">
+            <button type="submit"></button>
+        </form>
+        <div class="search__close">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <header id="header" class="header green tour">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="index.html" class="header__logo">1642</a>
+                <nav class="header__nav">
+                    <ul class="nav__list">
+                        <li class="list__item">
+                            <a href="#" class="nav__link">Главная</a>
+                        </li>
+                        <li class="list__item active inner">
+                            <a href="#" class="nav__link">Туры</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">Блог</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">О нас</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                        <button class="header__search"></button>
+                    </ul>
+                    <div class="burger_menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+                <address class="header__address">
+                    <a href="tel:+73952612617" class="header__phone">+7 (395) 261-26-17,</a>
+                    <a href="mailto:ilove@1642.travel" class="header__email">ilove@1642.travel</a>
+                </address>
+                <ul class="header__langs">
+                    <li class="lang__item">
+                        <a href="#" class="lang__link active">RU</a>
+                    </li>
+                    <li class="lang__item">
+                        <a href="#" class="lang__link">EN</a>
+                    </li>
+                    <li class="lang__item">
+                        <a href="#" class="lang__link">DE</a>
+                    </li>
+                    <li class="lang__item">
+                        <a href="#" class="lang__link">FR</a>
+                    </li>
+                </ul>
+                <div class="header__socials">
+                    <a href="#" class="social__insta"></a>
+                    <a href="#" class="social__youtube"></a>
+                </div>
+            </div>
+            <div class="header__content">
+                <h1 class="header__title">
+                    Экспедиция<br> в ледяной мир
+                </h1>
+                <div class="header__desc">
+                    <p> Вы посетите восточный и западный берега Байкала, остров Ольхон и Малое Море.</p>
+                    <p> Искупаетесь в горячих источниках Змеёвой бухты и порыбачете в Чивыркуйском заливе.</p>
+                    <p>Переночуете на льду Байкала в традиционной бурятской юрте и встретитесь с нерпами
+                        на Ушканьих островах.</p>
+                </div>
+                <a href="#" class="header__btn btn-green">Забронировать</a>
+            </div>
+        </div>
+        <div class="header__bg">
+            <picture>
+                <source srcset="./img/tourBG400.jpg" media="(max-width: 460px)" />
+                <source srcset="./img/tourBG700.jpg" media="(max-width: 768px)" />
+                <source srcset="./img/tourBG1600.jpg" media="(max-width: 1600px)" />
+                <img loading="lazy" src="./img/tourBG.jpg" alt="mainImage">
+            </picture>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <section class="tour-program">
+            <div class="container">
+                <div class="tour-program__absolute_block">
+                    <div class="absolute_block__top">
+                        <ul class="top__list">
+                            <li>
+                                <h5>7&nbsp;дней</h5>
+                                <div class="d-flex">
+                                    <h5>Группа</h5>
+                                    <span>4&ndash;11</span>
+                                </div>
+                            </li>
+                            <li>
+                                <h5>Питание</h5>
+                                <div class="group__text">
+                                    <span>3-разовое&nbsp;</span>
+                                    <span>+ перекусы</span>
+                                    <span>&nbsp;&nbsp; на&nbsp;свежем</span>
+                                    <span>&nbsp;&nbsp; воздухе</span>
+                                </div>
+                            </li>
+                            <li>
+                                <h5>Проживание</h5>
+                                <div>Гостинница, юрта,сибирский дом, турбаза</div>
+                            </li>
+                            <li>
+                                <h5>Сложность</h5>
+                                <div>Доп. физ. подготовка не&nbsp;требуется</div>
+                            </li>
+                        </ul>
+                        <span class="top__list-price">38&nbsp;000&nbsp;₽</span>
+                    </div>
+                    <div class="absolute_block__bottom">
+                        <div class="block__bottom__wrapper">
+                            <h5>Даты</h5>
+                            <span>Начало тура в&nbsp;понедельник, окончание&nbsp;&mdash; в&nbsp;воскресенье</span>
+                        </div>
+                        <ul class="dates__list">
+                            <li class="list__item">
+                                <span class="date__item">14&ndash;20 февраля</span>
+                                <span class="date__remains">Осталось 2&nbsp;места из&nbsp;11</span>
+                            </li>
+                            <li class="list__item">
+                                <span class="date__item">21&ndash;27 февраля</span>
+                                <span class="date__remains"> Свободно 11/11</span>
+                            </li>
+                            <li class="list__item">
+                                <span class="date__item">28&nbsp;февраля&mdash;6 март </span>
+                                <span class="date__remains">Свободно 7/11 </span>
+                            </li>
+                            <li class="list__item ghost">
+                                <span class="date__item">7&ndash;13 марта</span>
+                                <span class="date__remains">Группа сформирована </span>
+                            </li>
+                            <li class="list__item rel">
+                                <span class="date__item">14&ndash;20 марта</span>
+                                <span class="date__remains"> Свободно 5/11 </span>
+                                <a href="#" class="full_info">Полная информация о&nbsp;туре</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn-green dates__btn">Забронировать</a>
+
+                    </div>
+                </div>
+                <h2 class="tour-program__title">Программа тура</h2>
+                <ul class="tour-program__list">
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <span class="day"> День 1</span>
+                            <h2 class="title">Знакомство со&nbsp;столицей Бурятии</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/day1-large-img.webp" type="image/webp"><img loading="lazy" src="./img/day1-large-img.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">Иволгинский дацан. Деревянные резные узоры под карнизами крыш и&nbsp;яркие рисунки фасадов сделаны вручную</span>
+                                <ul class="galery__thumbs">
+                                    <li class="galery__thumb active">
+                                        <picture>
+                                            <source srcset="./img/day1-large-img.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day1-large-img.jpg" src="./img/day1-thumb-1.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day1-thumb-2.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day1-thumb-2.jpg" src="./img/day1-thumb-2.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day1-thumb-3.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day1-thumb-3.jpg" src="./img/day1-thumb-3.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day1-thumb-4.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day1-thumb-4.jpg" src="./img/day1-thumb-4.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day1-thumb-5.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day1-thumb-5.jpg" src="./img/day1-thumb-5.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                </ul>
+                                <p class="list__item_desc">Посетим центр буддизма России и&nbsp;его главную достопримечательность Иволгинский дацан. В&nbsp;этнографическом музее посмотрим как жили забайкальские этносы. Прогуляемся по&nbsp;историческим местам в&nbsp;центре Улан-Удэ и&nbsp;познакомимся с&nbsp;местной кухней. Вечером разместимся в&nbsp;уютной гостинице &laquo;Сагаан-Морин&raquo;.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <span class="day"> День 2</span>
+                            <h2 class="title">Через Улан-Баргасы в&nbsp;Усть-Баргузин</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/day2-large-img.webp" type="image/webp"><img loading="lazy" src="./img/day2-large-img.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">Река Итанца</span>
+                                <ul class="galery__thumbs">
+                                    <li class="galery__thumb active">
+                                        <picture>
+                                            <source srcset="./img/day2-large-img.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day2-large-img.jpg" src="./img/day2-thumb-1.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day2-thumb-2.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day2-thumb-2.jpg" src="./img/day2-thumb-2.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day2-thumb-3.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day2-thumb-3.jpg" src="./img/day2-thumb-3.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                </ul>
+                                <p class="list__item_desc">Через каскад непохожих друг на&nbsp;друга природных ландшафтов&nbsp;&mdash; кедровую тайгу хребта Улан-Баргасы и&nbsp;лесостепь долины реки Итанца доберёмся в&nbsp;посёлок Усть-Баргузин, где разместимся в&nbsp;традиционном сибирском доме со&nbsp;ставнями, воротами и&nbsp;русской печкой.</p>
+                                <p class="list__item_desc"> Восточный берег Байкала, в&nbsp;отличие от&nbsp;западного, обычно занесён двухметровым слоем снега и&nbsp;тут почти никогда не&nbsp;бывает чистого льда.</p>
+                            </div>
+                        </div>
+                        <div class="additionally-block">
+                            <span>800</span>
+                            <p>видов растений встречаются только на&nbsp;Байкале</p>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <span class="day"> День 3</span>
+                            <h2 class="title">Чивыркуйский залив: рыбалка и&nbsp;горячие источники </h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/day3-large-img.webp" type="image/webp"><img loading="lazy" src="./img/day3-large-img.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">Рыбалка в&nbsp;Чавыркуйском заливе. Хариус&nbsp;&mdash; это чистая пресноводная рыба, которую можно есть сырой </span>
+                                <p class="list__item_desc">В&nbsp;первой половине дня будем ловить в&nbsp;Чивыркуйском заливе трофейного сига и&nbsp;хариуса, а&nbsp;во&nbsp;второй&nbsp;&mdash; искупаемся в&nbsp;горячих источниках бухты Змеевая и&nbsp;полюбуемся на&nbsp;величественные гольцы полуострова Святой Нос и&nbsp;Баргузинского хребта.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <span class="day"> День 4</span>
+                            <h2 class="title">Через Ушканьи острова к&nbsp;центру Байкала</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/day4-large-img.webp" type="image/webp"><img loading="lazy" src="./img/day4-large-img.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">Традиционная бурятская юрта</span>
+                                <ul class="galery__thumbs">
+                                    <li class="galery__thumb active">
+                                        <picture>
+                                            <source srcset="./img/day4-large-img.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day4-large-img.jpg" src="./img/day4-thumb-1.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day4-thumb-2.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day4-thumb-2.jpg" src="./img/day4-thumb-2.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day4-thumb-3.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day4-thumb-3.jpg" src="./img/day4-thumb-3.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day4-thumb-4.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day4-thumb-4.jpg" src="./img/day4-thumb-4.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                </ul>
+                                <p class="list__item_desc">Вдоль крутых склонов полуострова Святой Нос, через нагромождения торосов
+                                    направимся по&nbsp;льду озера к&nbsp;Ушканьим островам и&nbsp;познакомимся с&nbsp;нерпами! Мы
+                                    увидим множество этих пугливых животных, которые будут прятаться в&nbsp;свои
+                                    норы-продыхи при нашем приближении. Затем направимся к&nbsp;месту ночевки&nbsp;&mdash; базовому
+                                    юрточному лагерю на&nbsp;середине Байкала. После размещения совершим несколько
+                                    пеших прогулок.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="additionally-block">
+                            <div class="img_wrapper">
+                                <picture>
+                                    <source srcset="./img/catfish.webp" type="image/webp"><img loading="lazy" src="./img/catfish.jpg" alt="">
+                                </picture>
+                            </div>
+                            <a href="#"><u>Эндемики Байкала. Какие они и&nbsp;почему их&nbsp;так много</u></a>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <span class="day"> День 5</span>
+                            <h2 class="title">На&nbsp;остров Ольхон!</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/day5-large-image.webp" type="image/webp"><img loading="lazy" src="./img/day5-large-image.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">Каждую зиму на&nbsp;Байкале устанавливают знаки дорожного движения по&nbsp;льду</span>
+                                <ul class="galery__thumbs">
+                                    <li class="galery__thumb active">
+                                        <picture>
+                                            <source srcset="./img/day5-large-image.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day5-large-img.jpg" src="./img/day5-thumb-1.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day5-thumb-2.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day5-thumb-2.jpg" src="./img/day5-thumb-2.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day5-thumb-3.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day5-thumb-3.jpg" src="./img/day5-thumb-3.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day5-thumb-4.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day5-thumb-4.jpg" src="./img/day5-thumb-4.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                </ul>
+                                <p class="list__item_desc">Посетим северный мыс острова Ольхон&nbsp;&mdash; Хобой (в&nbsp;переводе с&nbsp;бурятского &laquo;клык&raquo;), а
+                                    по&nbsp;дороге осмотрим многочисленные скалы, гроты, бухты, заливы и&nbsp;острова.
+                                    Преодолеем торосы-надвиги и&nbsp;становые трещины. Сварим байкальскую уху, осмотрим
+                                    ледяные наплески и&nbsp;совершим традиционный ритуал путешественника &laquo;Поцелуй
+                                    Байкала&raquo;. Разместимся на&nbsp;уютной турбазе в&nbsp;посёлке Хужир и&nbsp;попаримся в&nbsp;бане.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <span class="day"> День 6</span>
+                            <h2 class="title">В&nbsp;Иркутск через Малое Море</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/day6-large-img.webp" type="image/webp"><img loading="lazy" src="./img/day6-large-img.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">Остров Огой</span>
+                                <ul class="galery__thumbs">
+                                    <li class="galery__thumb active">
+                                        <picture>
+                                            <source srcset="./img/day6-large-img.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day6-large-img.jpg" src="./img/day6-thumb-1.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day6-thumb-2.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day6-thumb-2.jpg" src="./img/day6-thumb-2.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day6-thumb-3.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day6-thumb-3.jpg" src="./img/day6-thumb-3.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                    <li class="galery__thumb">
+                                        <picture>
+                                            <source srcset="./img/day6-thumb-4.webp" type="image/webp">
+                                            <img loading="lazy" data-largeSrc="./img/day6-thumb-4.jpg" src="./img/day6-thumb-4.jpg" alt="">
+                                        </picture>
+                                    </li>
+                                </ul>
+                                <p class="list__item_desc">Посетим достопримечательности южной части пролива Малое Море. Осмотрим
+                                    метановые пузырьки в&nbsp;толще льда и&nbsp;увидим знаменитую ступу просвещения острова
+                                    Огой. Во&nbsp;второй половине дня поднимемся на&nbsp;гору Тан-Хан и&nbsp;с&nbsp;высоты 980 метров
+                                    осмотрим все места, в&nbsp;которых мы&nbsp;побывали.
+                                </p>
+                                <p class="list__item_desc"> По&nbsp;дороге в&nbsp;Иркутск посетим Тажеранскую степь и&nbsp;посмотрим на&nbsp;скальники длины
+                                    горных духов. В&nbsp;Иркутске разместимся в&nbsp;гостинице и&nbsp;устроим прощальный ужин в
+                                    самобытном и&nbsp;уютном ресторане. </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list__item">
+                        <div class="list__item__content">
+                            <span class="day"> День 7</span>
+                            <h2 class="title">Возвращение домой</h2>
+                            <div class="galery">
+                                <div class="galery__large_image_wrapper">
+                                    <picture>
+                                        <source srcset="./img/day7-large-img.webp" type="image/webp"><img loading="lazy" src="./img/day7-large-img.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <span class="galery__large_image_decs">Необычайно прозрачный лёд рядом с&nbsp;островом Огой</span>
+                                <p class="list__item_desc">Утром гид доставит вас в&nbsp;аэропорт и&nbsp;вы&nbsp;вернётесь домой с&nbsp;полным багажом
+                                    впечатлений, новых знакомств, красочными фотографиями и&nbsp;яркими воспоминаниями
+                                    о&nbsp;зимних солнечных днях, проведенных на&nbsp;Байкале!</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="tour-info" id="tour-info">
+            <div class="container">
+                <h2 class="tour-info__title">
+                    Полная информация о&nbsp;туре
+                </h2>
+                <div class="tour-info__content">
+                    <div class="left-content-block">
+                        <div class="conditions">
+                            <h3 class="content__title conditions__title">Проживание</h3>
+                            <ul class="conditions__list">
+                                <li>Ежедневное 3-разовое горячее питание и&nbsp;дополнительные перекусы на&nbsp;открытом
+                                    воздухе во&nbsp;время прогулок и&nbsp;трекинга.
+                                </li>
+                                <li>3&nbsp;ночи в&nbsp;комформабельных гостиницах и&nbsp;турбазах,</li>
+                                <li>1&nbsp;ночь в&nbsp;традиционной бурятской юрте,</li>
+                                <li>1&nbsp;ночь в&nbsp;традиционном сибирском доме.</li>
+                            </ul>
+                            <h3 class="content__title conditions__title">Питание</h3>
+                            <p class="conditions__text">Ежедневное 3-разовое горячее питание и&nbsp;дополнительные перекусы на&nbsp;открытом воздухе во&nbsp;время прогулок и&nbsp;трекинга.Ежедневное 3-разовое горячее питание и&nbsp;дополнительные перекусы на&nbsp;открытом воздухе во&nbsp;время прогулок и&nbsp;трекинга.</p>
+                        </div>
+                        <div class="info-price">
+                            <h3 class="content__title info-price__title">
+                                Стоимость <span>38&nbsp;000&nbsp;₽</span>
+                            </h3>
+                            <p class=" info-price__subtitle">
+                                Предусмотрены скидки на&nbsp;3-х и&nbsp;более участников и&nbsp;для детей младше 18&nbsp;лет.
+                            </p>
+                            <h4 class="info-price__list-title">Включено в&nbsp;стоимость:</h4>
+                            <ul class="info-price__list">
+                                <li class="list__item">все трансферы входящие в&nbsp;программу тура,</li>
+                                <li class="list__item">сопровождение гида в&nbsp;течение всего тура, приготовление пищи и&nbsp;разведение
+                                    костров в&nbsp;местах отдыха,
+                                </li>
+                                <li class="list__item">размещение в&nbsp;гостиницах, турбазах, домах и&nbsp;юртах,
+                                </li>
+                                <li class="list__item">ежедневное 3-разовое питание,</li>
+                                <li class="list__item">входные билеты в&nbsp;музеи,
+                                </li>
+                                <li class="list__item">взносы за&nbsp;посещение Прибайкальского и&nbsp;Забайкальского национальных парков,
+                                </li>
+                                <li class="list__item">посещение горячих источников бухты Змеевая,
+                                </li>
+                                <li class="list__item">посещение Ушканьих островов,
+                                </li>
+                                <li class="list__item">туристическое оборудование для активного отдыха: сани-волокуши и&nbsp;альпенштоки,
+                                </li>
+                                <li class="list__item">страховка жизни и&nbsp;здоровья. </li>
+                            </ul>
+                            <h4 class="info-price__list-title">Оплачивается отдельно:</h4>
+                            <ul class="info-price__list">
+                                <li class="list__item">трансфер до&nbsp;Улан-дэ и&nbsp;трансфер из&nbsp;Иркутска,</li>
+                                <li class="list__item"> сувениры и&nbsp;другие покупки в&nbsp;местных магазинах, </li>
+                                <li class="list__item"> экстремальные развлечения: парашюты, багги, снегоходы, собачьи упряжки и&nbsp;т.&nbsp;п.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-content-block">
+                        <div class="left-col">
+                            <div class="insurance">
+                                <h3 class="content__title insurance__title">Страхование</h3>
+                                <p class="insurance__desc">Жизнь и&nbsp;здоровье всех участников застрахованы компанией &laquo;Ингосстрах&raquo;. Договор
+                                    страхования заключается индивидуально с&nbsp;каждым участником перед началом тура.</p>
+                                <p class="insurance__desc"> Страховка включена в&nbsp;стоимость.</p>
+                                <div class="insurance__logo">
+                                    <picture>
+                                        <source srcset="./img/insurance-logo.webp" type="image/webp"><img loading="lazy" src="./img/insurance-logo.png" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="toggle-content__elem">
+                                <h3 class="toggle-content__elem_title content__title">
+                                    Правила поведения в&nbsp;туре
+                                </h3>
+                                <div class="toggle-content__elem_block ">
+                                    <ul class="toggle-content__list">
+                                        <li class="list__item">Следовать инструкциям и&nbsp;указаниям гида. </li>
+                                        <li class="list__item">При необходимости оказывать посильную помощь в&nbsp;организации мест стоянки и&nbsp;отдыха. </li>
+                                        <li class="list__item">Соблюдать нормы экологической культуры.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dates jumping">
+                                <h3 class="dates__title content__title">Даты</h3>
+                                <span class="dates__subtitle">Начало тура в&nbsp;понедельник, окончание в&nbsp;воскресенье</span>
+                                <ul class="dates__list">
+                                    <li class="list__item">
+                                        <span class="date__item">14&ndash;20 февраля</span>
+                                        <span class="date__remains">Осталось 2&nbsp;места из&nbsp;11</span>
+                                    </li>
+                                    <li class="list__item">
+                                        <span class="date__item">21&ndash;27 февраля</span>
+                                        <span class="date__remains"> Свободно 11/11</span>
+                                    </li>
+                                    <li class="list__item">
+                                        <span class="date__item">28&nbsp;февраля&mdash;6 март </span>
+                                        <span class="date__remains">Свободно 7/11 </span>
+                                    </li>
+                                    <li class="list__item ghost">
+                                        <span class="date__item">7&ndash;13 марта</span>
+                                        <span class="date__remains">Группа сформирована </span>
+                                    </li>
+                                    <li class="list__item">
+                                        <span class="date__item">14&ndash;20 марта</span>
+                                        <span class="date__remains"> Свободно 5/11 </span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn-green dates__btn">Забронировать</a>
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <div class="toggle-content__elem">
+                                <h3 class="toggle-content__elem_title content__title">
+                                    Подготовка
+                                </h3>
+                                <div class="toggle-content__elem_block">
+                                    <ul class="toggle-content__list">
+                                        <li class="list__item">Специальная физическая подготовка не&nbsp;требуется.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="toggle-content__elem">
+                                <h3 class="toggle-content__elem_title content__title">
+                                    Снаряжение
+                                </h3>
+                                <div class="toggle-content__elem_block">
+                                    <ul class="toggle-content__list">
+                                        <li class="list__item">Список личных вещей и&nbsp;снаряжения, которые нужно взять с&nbsp;собой: </li>
+                                        <li class="list__item">1) тёплая ветронепродуваемая шапка (флисовая или шерстяная), </li>
+                                        <li class="list__item">2) cпортивная шапка,</li>
+                                        <li class="list__item">3) тёплый пуховик с&nbsp;капюшоном (температурный режим до&nbsp;&minus;30&deg;С),</li>
+                                        <li class="list__item">4) cпортивная ветронепродуваемая куртка с&nbsp;капюшоном, </li>
+                                        <li class="list__item">5) флисовая кофта, </li>
+                                        <li class="list__item">6) 2&nbsp;комплекта термобелья (флисовый и&nbsp;спортивный),</li>
+                                        <li class="list__item">7) 2&nbsp;комплекта трекинговых носков,</li>
+                                        <li class="list__item">8) солнцезащитные очки (лучше горнолыжные)</li>
+                                        <li class="list__item">9) тёплые трекинговые ботинки (до&nbsp;&minus;30&deg;С),</li>
+                                        <li class="list__item">10) тёплые штаны или тёплый комбинезон,</li>
+                                        <li class="list__item">11) трико спортивные,</li>
+                                        <li class="list__item">12) тёплые перчатки или варежки,</li>
+                                        <li class="list__item">13) гамаши,</li>
+                                        <li class="list__item">14) фонарик,</li>
+                                        <li class="list__item">15) предметы личной гигиены.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="review tour" id="review">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="review__title mobile">Отзыв</h2>
+                        <div class="image_wrapper">
+                            <picture>
+                                <source srcset="./img/review-tout-large.webp" type="image/webp"><img loading="lazy" src="./img/review-tout-large.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="review__content">
+                            <h2 class="review__title">Впечатления</h2>
+                            <span class="review__name">Анастасии Семёновой</span>
+                            <span class="review__location">из&nbsp;Санкт-Петербурга</span>
+                            <p class="review__text">Байкал давно был местом, которе хотелось посетить. Этой весной наконец-то получилось и&nbsp;эмоций осталось столько, что хватит на&nbsp;целый год. Мы&nbsp;уже запланировали следующую поездку по&nbsp;новому маршруту. Теперь очень её&nbsp;ждём. </p>
+                            <p class="review__text">Лёд необыкновенной красоты! Нам повезло с&nbsp;тёплой погодой и&nbsp;рыбалкой. Парни остались довольны. А&nbsp;женская половина в&nbsp;восторге от&nbsp;термальных источников. Спасибо большое!</p>
+                            <span class="review__link">Апрель 2021 </span>
+                        </div>
+                        <ul class="review__images">
+                            <li>
+                                <picture>
+                                    <source srcset="./img/review-thumb-1.webp" type="image/webp"><img loading="lazy" src="./img/review-thumb-1.png" alt="">
+                                </picture>
+                            </li>
+                            <li>
+                                <picture>
+                                    <source srcset="./img/review-thumb-2.webp" type="image/webp"><img loading="lazy" src="./img/review-thumb-2.png" alt="">
+                                </picture>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reservation" id="reservation">
+            <div class="container">
+                <div class="reservation__wrapper">
+                    <div class="reservation__content">
+                        <h2 class="reservation__title">Бронирование тура</h2>
+                        <h4 class="reservation__subtitle">Экспедиция в&nbsp;ледяной мир</h4>
+                        <form action="#" class="reservation__form" method="POST">
+                            <label>
+                                <span class="label-name">Имя</span>
+                                <input type="text" name="name" class="form__name">
+                            </label>
+                            <label>
+                                <span class="label-name">Даты</span>
+                                <select name="date" id="date-select">
+                                    <option value="14—20 февраля" data-amount="Осталось 2 места из 11" selected>
+                                        14&ndash;20 февраля Осталось 2&nbsp;места из&nbsp;11
+                                    </option>
+                                    <option value="21—27 февраля" data-amount="Свободно 11/11">
+                                        21&ndash;27 февраля Свободно 11/11
+                                    </option>
+                                    <option value="28 февраля—6 марта" data-amount="Свободно 7/11">
+                                        28&nbsp;февраля&mdash;6 марта Свободно 7/11
+                                    </option>
+                                    <option value="14—20 марта" data-amount="Свободно 5/11">
+                                        14&ndash;20 марта Свободно 5/11
+                                    </option>
+                                </select>
+                            </label>
+                            <label>
+                                <span class="label-name">Кол-во человек</span>
+                                <div class="mobile__wrapper">
+                                    <select name="amount" id="amount-select">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                    </select>
+                                    <div class="remaining__seats">Осталось 2&nbsp;места из&nbsp;11</div>
+                                </div>
+                            </label>
+                            <label>
+                                <span class="label-name">Эл. почта</span>
+                                <input type="email" class="form__email" required>
+                            </label>
+                            <label>
+                                <span class="label-name">Телефон</span>
+                                <input type="tel" class="form__phone" required>
+                            </label>
+                            <label class="area__label">
+                                <span class="label-name">Вопросы или пожелания</span>
+                                <textarea name="message" class="form__message"></textarea>
+                            </label>
+                            <button type="submit" class="btn-green form__btn">Забронировать <span> тур</span></button>
+                            <span class="form__desc">Мы&nbsp;уточним бронирование по&nbsp;указанной&nbsp;эл. почте в&nbsp;течение 1&nbsp;рабочего дня.</span>
+                            <span class="form__agreement">Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь с<a href="#">обработкой ваших персональных данных.</a></span>
+                        </form>
+                    </div>
+                    <div class="reservation__roadmap">
+                        <div class="roadmap__desc">
+                            <h4>Маршрут</h4>
+                            <span>Длина пешего маршрута 130&nbsp;км</span>
+                            <span>Общая длина маршрута 600&nbsp;км</span>
+                            <span>6&nbsp;остановок на&nbsp;ночь</span>
+                        </div>
+                        <div class="roadmap__img">
+                            <picture>
+                                <source srcset="./img/roadmap.webp" type="image/webp"><img loading="lazy" src="./img/roadmap.png" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular-tours similar-tours" id="popular-tours">
+            <div class="popular-tours__wrapper">
+                <div class="container">
+                    <h2 class="popular-tours__title">
+                        <span>Похожие туры</span>
+                        <a href="" class="popular-tours__link">Все туры</a>
+                    </h2>
+                    <ul class="popular-tours__list">
+                        <li class="list__item _big">
+                            <div class="image__wrapper">
+                                <picture>
+                                    <source srcset="./img/transparent-ice-blog-400.jpg" media="(max-width: 400px)" />
+                                    <source srcset="./img/transparent-ice-700.jpg" media="(max-width: 768px)" />
+                                    <img loading="lazy" src="./img/transparent-ice.jpg" alt="">
+                                </picture>
+                            </div>
+                            <div class="list__item_content">
+                                <div class="flex__wrapper">
+                                    <a href="" class="list__item_title"><u>Большая хрустальная сказка</u></a>
+                                    <div class="list__item_price">
+                                        <div class="price">42&nbsp;500&nbsp;₽ </div>
+                                        <span class="days"> 7&nbsp;дней</span>
+                                    </div>
+                                </div>
+                                <div class="flex__wrapper">
+                                    <p class="list__item_text">Комбинированный тур, половина которого состоит из&nbsp;трекинговых переходов по&nbsp;горам и&nbsp;льду Байкала, а&nbsp;вторая половина&nbsp;&mdash; из&nbsp;экскурсионных прогулок на&nbsp;автомобилях.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list__item _medium">
+                            <div class="list__item_content">
+                                <div class="flex__wrapper">
+                                    <a href="" class="list__item_title"><u>Вокруг Ольхона</u></a>
+                                    <div class="list__item_price">
+                                        <div class="price">30&nbsp;000&nbsp;₽ </div>
+                                        <span class="days"> 5&nbsp;дней</span>
+                                    </div>
+                                </div>
+                                <p class="list__item_text">Активный трекинговый тур с&nbsp;большим количеством переходов по&nbsp;льду Байкала и&nbsp;ночевками в&nbsp;зимних палатках. Для тура вам понадобится определенная физическая и&nbsp;моральная выдержка, оптимизм и&nbsp;тяга к&nbsp;приключениям.
+                                </p>
+                            </div>
+                            <div class="image__wrapper">
+                                <picture>
+                                    <source srcset="./img/tents-400.jpg" media="(max-width: 400px)" />
+                                    <source srcset="./img/tents-1000.jpg" media="(max-width: 1000px)" />
+                                    <img loading="lazy" src="./img/tents.jpg" alt="">
+                                </picture>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="popular-tours__btn btn-green">Все туры</a>
+                </div>
+            </div>
+        </section>
+        <section class="blog inner" id="blog">
+            <div class="container">
+                <h2 class="blog__title">
+                    <a href="#">Блог</a>
+                </h2>
+                <div class="row">
+                    <div class="col">
+                        <article class="blog__item">
+                            <div class="blog__image">
+                                <picture>
+                                    <source srcset="./img/blogImage1-700.jpg" media="(max-width: 700px)" />
+                                    <img loading="lazy" src="./img/blogImage1-700.jpg" alt="">
+                                </picture>
+                            </div>
+                            <h5><a href="#" class="blog-item__title"><u>Байкальский лед. Что чаще всего интересует туристов?</u></a></h5>
+                            <span class="blog__date">Февраль 2020</span>
+                        </article>
+                    </div>
+                    <div class="col ">
+                        <article class="blog__item ">
+                            <div class="blog__image">
+                                <picture>
+                                    <source srcset="./img/blogImage2-700.jpg" media="(max-width: 700px)" />
+                                    <img loading="lazy" src="./img/blogImage2.jpg" alt="">
+                                </picture>
+                            </div>
+                            <h5><a href="#" class="blog-item__title"><u>Чем заняться на&nbsp;Байкале зимой? Когда лучше всего его посетить?</u></a></h5>
+                            <span class="blog__date"> Февраль 2020</span>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="blog__item">
+                            <h5><a href="#" class="blog-item__title"><u>Байкал: великий и&nbsp;прозрачный. Почему вода озера такая чистая?</u></a></h5>
+                            <span class="blog__date"> Январь 2020</span>
+                        </article>
+                        <article class="blog__item">
+                            <h5><a href="#" class="blog-item__title"><u>Эндемики Байкала. Какие они и&nbsp;почему их&nbsp;так много</u></a></h5>
+                            <span class="blog__date">Декабрь 2019</span>
+                        </article>
+                        <article class="blog__item">
+                            <h5><a href="#" class="blog-item__title"><u>Кругобайкальская железная дорога.Часть 1: история строительства</u></a></h5>
+                            <span class="blog__date">Октябрь 2019</span>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="blog__item">
+                            <h5> <a href="#" class="blog-item__title"><u>Топ 10&nbsp;мест на&nbsp;Байкале для посещения зимой</u></a></h5>
+                            <span class="blog__date">Январь 2020</span>
+                        </article>
+                        <article class="blog__item">
+                            <h5> <a href="#" class="blog-item__title"><u>Астрофизика на&nbsp;Байкале. Как работает и&nbsp;что ищет крупнейший в&nbsp;Северном нейтринный телескоп </u></a></h5>
+                            <span class="blog__date">Ноябрь 2020</span>
+                        </article>
+                        <article class="blog__item">
+                            <h5><a href="#" class="blog-item__title"><u>Кругобайкальская железная дорога.Вступление</u></a></h5>
+                            <span class="blog__date">Октябрь 2019</span>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container relative">
+            <div class="to_top_btn">
+                <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.70711 0.292893C8.31658 -0.097631 7.68342 -0.097631 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 2L9 1L7 1L7 2L9 2Z" fill="white" />
+                </svg>
+            </div>
+            <div class="footer__wrap">
+                <nav class="footer__nav">
+                    <ul class="nav__list">
+                        <li class="list__item">
+                            <a href="#" class="nav__link">Туры</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">Блог</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">О нас</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">партнёры</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">Вакансии</a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address class="footer__address">
+                    <a href="tel:+73952612617" class="footer__phone">+7 (395) 261-26-17,</a>
+                    <a href="mailto:ilove@1642.travel" class="footer__email">ilove@1642.travel</a>
+                </address>
+                <div class="footer__socials">
+                    <a href="#" class="social__insta"></a>
+                    <a href="#" class="social__youtube"></a>
+                </div>
+            </div>
+            <div class="footer__info">
+                <span>© 2006—2021 Туры на Байкал 1642</span>
+                <a href="#">Дизайн сайта — Екатерина Морозова</a>
+            </div>
+        </div>
+    </footer>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <!-- jquery-ui -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
